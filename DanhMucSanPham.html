@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XE ĐẠP - Xe đạp trực Tuyến</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/Danh mục sản phẩm.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div id="big-header">
+        <div id="header-top">
+            <div class="container grid">
+                <div class="nav-top">
+                    <a class="nav-top-item" href="Trang chủ.html">Chào mừng bạn đến với Cửa hàng xe đạp</a>
+                    <span class="border-separate"></span>
+                    <a class="nav-top-item" href="tel:0343628648">Liên hệ: 0343628648 - 0983123456</a>
+                    <span class="border-separate"></span>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100045393554281" target="_blank"><i class="fa-brands fa-facebook-f color-white"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter color-white"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest color-white"></i></a>
+                        <a href="mailto:vandan250702@gmail.com" target="_blank"><i class="fa-brands fa-google-plus-g color-white"></i></a>
+                    </div>
+                </div>
+                <div class="user-top">
+                    <div class="drop-down">
+                        <span class="user-item">Tài khoản</span>
+                        <i class="fa-solid fa-angle-down down-user color-white"></i>
+                        <!-- <div class="link-login">
+                            <ul class="user-link">
+                                <li class="user-link-login"><a href="">Đăng nhập</a></li>
+                                <li class="user-link-login"><a href="">Đăng ký</a></li>
+                            </ul>
+                        </div> -->
+                        <span class="border-separate"></span>
+                    </div>
+                    <div class="support-link">
+                        <a href="Dịch vụ bán hàng.html" class="user-item">Dịch vụ</a>
+                        <span class="border-separate"></span>
+                        <a href="#" class="user-item">Hỗ trợ</a>
+                        <span class="border-separate"></span>
+                    </div>
+                    <div class="top-cart">
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping color-white"></i>
+                            <span class="count color-white">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-header">
+            <div class="main-header--container">
+                <div class="img-header">
+                    <a href="Trang chủ.html">
+                        <img src="https://theme.hstatic.net/1000292017/1000400183/14/logo2.png?v=575" alt="">
+                    </a>
+                </div>
+                <div class="menu-header">
+                    <ul class="list-menu">
+                        <li class="menu-item-dad"><a href="Danh mục sản phẩm.html"> XE ĐẠP </a>
+                            <i class="fa-solid fa-angle-down color-white"></i>
+                            <ul class="menu-item-child">
+                                <li class="list-menu-item"><a href=""> XE ĐẠP ĐUA (ROAD)</a></li>
+                                <li class="list-menu-item"><a href=""> XE ĐẠP LEO NÚI(MTB)</a></li>
+                                <li class="list-menu-item"><a href=""> XE ĐẠP ĐƯỜNG DÀI(TOURING)</a></li>
+                                <li class="list-menu-item"><a href=""> XE ĐẠP THÀNH PHỐ (CITY)</a></li>
+                                <li class="list-menu-item"><a href=""> XE ĐẠP XẾP / GẤP(FOLDING)</a></li>
+                                <li class="list-menu-item"><a href=""> XE ĐẠP TRẺ EM</a></li>
+                                <li class="list-menu-item"><a href=""> XE ĐẠP KHÔNG THẮNG (FIXED GEAR)</a></li>
+                                <li class="list-menu-item"><a href=""> XE ĐẠP ĐIỆN</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-dad"><a href=""> PHỤ TÙNG
+                            <i class="fa-solid fa-angle-down color-white"></i></a>
+                            <ul class="menu-item-child">
+                                <li class="list-menu-item"><a href="">ROAD</a></li>
+                                <li class="list-menu-item"><a href="">MTB</a></li>
+                                <li class="list-menu-item"><a href="">FIXED GEAR</a></li>
+                                <li class="list-menu-item"><a href="">CHÉN CỔ</a></li>
+                                <li class="list-menu-item"><a href="">PHUỘC</a></li>
+                                <li class="list-menu-item"><a href="">ĐỒ NGHỀ, DỤNG CỤ</a></li>
+                                <li class="list-menu-item"><a href="">BAGA, CHỐNG, GIÁ DỰNG</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-dad"><a href=""> PHỤ KIỆN
+                            <i class="fa-solid fa-angle-down color-white"></i></a>
+                            <ul class="menu-item-child">
+                                <li class="list-menu-item"><a href="">PHỤC KIỆN ĐIỆN TỬ</a></li>
+                                <li class="list-menu-item"><a href="">GHẾ NGỒI TRẺ EM</a></li>
+                                <li class="list-menu-item"><a href="">TRANG PHỤC, BẢO HỘ</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-dad"><a href=""> BỘ TRUYỀN ĐỘNG
+                            <i class="fa-solid fa-angle-down color-white"></i></a>
+                            <ul class="menu-item-child">
+                                <li class="list-menu-item"><a href="">GROUPSET</a></li>
+                                <li class="list-menu-item"><a href="">TAY ĐỀ - TAY LẮC</a></li>
+                                <li class="list-menu-item"><a href="">CÙI ĐỀ TRƯỚC(SANG DĨA)</a></li>
+                                <li class="list-menu-item"><a href="">CÙI ĐỀ SAU(SANG LÍP)</a></li>
+                                <li class="list-menu-item"><a href="">GIÒ ĐĨA</a></li>
+                                <li class="list-menu-item"><a href="">LÍP</a></li>
+                                <li class="list-menu-item"><a href="">SÊN</a></li>
+                                <li class="list-menu-item"><a href="">TRỤC GIỮA</a></li>
+                                <li class="list-menu-item"><a href="">BÁNH BỘ</a></li>
+                                <li class="list-menu-item"><a href="">ĐÙM - CĂM - NIỀNG</a></li>
+                                <li class="list-menu-item"><a href="">VỎ - RUỘT</a></li>
+                                <li class="list-menu-item"><a href="">THẮNG</a></li>
+                                <li class="list-menu-item"><a href="">VÈ</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-dad"><a href=""> KHUNG SƯỜN
+                            <i class="fa-solid fa-angle-down down-user color-white"></i></a>
+                            <ul class="menu-item-child">
+                                <li class="list-menu-item"><a href="">KHUNG ROAD</a></li>
+                                <li class="list-menu-item"><a href="">KHUNG MTB</a></li>
+                                <li class="list-menu-item"><a href="">KHUNG FIXED GEAR</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-dad"><a href=""> TUỲ CHỌN CẤU HÌNH
+                            <i class="fa-solid fa-angle-down down-user color-white"></i></a>
+                            <ul class="menu-item-child">
+                                <li class="list-menu-item"><a href="">XE ĐẠP ROAD</a></li>
+                                <li class="list-menu-item"><a href="">XE ĐẠP MTB</a></li>
+                                <li class="list-menu-item"><a href="">XE ĐẠP FIXED GEAR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-main-menu user-top">
+                    <div class="drop-down drop-down-main-menu">
+                        <span class="user-item">Tài khoản</span>
+                        <i class="fa-solid fa-angle-down down-user color-white"></i>
+                        <!-- <ul class="user-link">
+                            <li class="user-link-login"><a href="">Đăng nhập</a></li>
+                            <li class="user-link-login"><a href="">Đăng ký</a></li>
+                        </ul> -->
+                        <span class="border-separate"></span>
+                    </div>
+                    <div class="support-link">
+                        <a href="Dịch vụ bán hàng.html" class="user-item">Dịch vụ</a>
+                        <span class="border-separate"></span>
+                        <a href="#" class="user-item">Hỗ trợ</a>
+                        <span class="border-separate"></span>
+                    </div>
+                    <div class="top-cart">
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping color-white"></i>
+                            <span class="count color-white">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-service grid__full-width">
+            <div class="hs-container grid">
+                <div class="service">
+                    <a href="" class="service-link">
+                        <img src="imgs/h1.png" alt="">
+                        <h4 class="text-sevice">GIAO HÀNG TOÀN QUỐC</h4>
+                    </a>
+                </div>
+                <div class="service col-3">
+                    <a href="" class="service-link">
+                        <img src="imgs/h2.png" alt="">
+                        <h4 class="text-sevice">BÀN HÀNG 8G ĐẾN 19G</h4>
+                    </a>
+                </div>
+                <div class="service col-3">
+                    <a href="" class="service-link">
+                        <img src="imgs/h3.png" alt="">
+                        <h4 class="text-sevice">ĐẢM BẢO CHẤT LƯỢNG</h4>
+                    </a>
+                </div>
+                <div class="service col-3">
+                    <a href="Dịch vụ bán hàng.html" class="service-link">
+                        <img src="imgs/h4.png" alt="">
+                        <h4 class="text-sevice">THANH TOÁN KHI NHẬN HÀNG</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar grid">
+        <div class="navbar-vertical">
+            <div class="category">
+                <i class="category-icon fa-solid fa-bars"></i>
+                <h4 class="category-text">DANH MỤC SẢN PHẨM</h4>
+            </div>
+            <ul class="category-list">
+                <li>
+                    <a href="#xe-dap" class="category-item-link">
+                        <img src="./imgs/category1.png" class="category-item-icon" alt="">
+                        <p class="category-item-text">XE ĐẠP</p>
+                        <i class="drop-right fa-solid fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#phu-tung" class="category-item-link">
+                        <img src="./imgs/category2.png" class="category-item-icon" alt="">
+                        <p class="category-item-text">PHỤ TÙNG</p>
+                        <i class="drop-right fa-solid fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#phu-kien" class="category-item-link">
+                        <img src="./imgs/category3.png" class="category-item-icon" alt="">
+                        <p class="category-item-text">PHỤ KIỆN</p>
+                        <i class="drop-right fa-solid fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#bo-truyen-dong" class="category-item-link">
+                        <img src="./imgs/category4.png" class="category-item-icon" alt="">
+                        <p class="category-item-text">BỘ TRUYỀN ĐỘNG</p>
+                        <i class="drop-right fa-solid fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#khung-suon" class="category-item-link">
+                        <img src="./imgs/category5.png" class="category-item-icon" alt="">
+                        <p class="category-item-text">KHUNG SƯỜN</p>
+                        <i class="drop-right fa-solid fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="category-item-link">
+                        <img src="./imgs/category6.png" class="category-item-icon" alt="">
+                        <p class="category-item-text">TUỲ CHỌN CẤU HÌNH</p>
+                        <i class="drop-right fa-solid fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__search">
+            <div class="search__all">
+                <span class="search__all-text">Tất cả</span>
+                <i class="search__all-icon-down fa-solid fa-angle-down"></i></a>
+            </div>
+            <div class="search__input">
+                <input type="text" class="input-search" placeholder="Nhập từ khoá cần tìm ...">
+            </div>
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container-bath grid">
+        <div class="bath">
+            <span class="bath1"><a href="Trang chủ.html">Trang chủ</a></span>
+            <span class="gach-xuoc">/</span>
+            <span class="bath2"><a href="Danh mục sản phẩm.html">Danh mục</a></span>
+            <span class="gach-xuoc">/</span>
+            <span class="this-index">XE ĐẠP</span>
+        </div>
+    </div>
+    <div class="container-filter-product grid">
+        <div class="filter-product">
+            <div class="header-filter-product">
+                <h3 class="text-header-filter">LỌC SẢN PHẨM</h3>
+            </div>
+            <div class="list-name-product">
+                <h4 class="text-producer">NHÀ SẢN XUẤT</h4>
+                <ul class="list-producer">
+                    <li class="name-producer">
+                        <a href="" class="product-of-producer">
+                            <input type="checkbox" id="producer1">
+                            <label for="producer1" class="item-producer">GIANT</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer2">
+                            <label for="producer2" class="item-producer">TRINX</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer3">
+                            <label for="producer3" class="item-producer">TWITTER</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer4">
+                            <label for="producer4" class="item-producer">WAKE</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer5">
+                            <label for="producer5" class="item-producer">SKY</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer6">
+                            <label for="producer6" class="item-producer">AVID</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer7">
+                            <label for="producer7" class="item-producer">CYLION</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer8">
+                            <label for="producer8" class="item-producer">EC90</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer9">
+                            <label for="producer9" class="item-producer">BLOOKE</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer10">
+                            <label for="producer10" class="item-producer">PASAK</label>
+                        </a>
+                    </li>
+                </ul>
+                <hr style="width: 80%;margin-left: 22px;opacity: 0.4;">
+                <h4 class="text-producer">GIÁ</h4>
+                <ul class="list-producer filter-price">
+                    <li class="name-producer">
+                        <a href="" class="product-of-producer">
+                            <input type="checkbox" id="producer1">
+                            <label for="producer1" class="item-producer">< 500.000₫</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer2">
+                            <label for="producer2" class="item-producer">500.000₫ - 1.000.000₫</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer3">
+                            <label for="producer3" class="item-producer">1.000.000₫ - 3.000.000₫</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer4">
+                            <label for="producer4" class="item-producer">3.000.000₫ - 5.000.000₫</label>
+                        </a>
+                    </li>
+                    <li class="name-producer">
+                        <a href="">
+                            <input type="checkbox" id="producer5">
+                            <label for="producer5" class="item-producer">> 5.000.000₫</label>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-products grid">
+        <div class="box-products" id="xe-dap">
+            <div class="box-content">
+                <div class="header-category-products">
+                    <h4 class="title-category-products">XE ĐẠP</h4>
+                    <div class="arrange-list-products">
+                        <p class="text-arrange-list-products">Sắp xếp theo:</p>
+                        <select name="select-arrange" id="select-arrange-list-products">
+                        <option value="sanphamnoibat">Sản phẩm nổi bật</option>
+                        <option value="giatangdan">Giá tăng dần</option>
+                        <option value="giagiamdan">Giá giảm dần</option>
+                        <option value="sapxeptheoten">Tên: A-Z</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="box-list-products">
+                    <!-- <div id="bike-road" class="container-products"> -->
+                    <div class="products">
+                        <a href="Sản phẩm xe đạp.html">
+                            <div class="container-img-product">
+                                <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                                <img src="imgs/Xe đạp/3.png" alt="" class="item-product">
+                                <div class="intro-product-item-hover">
+                                    <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                    <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="name-product">XE ĐẠP 20" - GIANT MOMENTUM - INEED ESPRESSO - 7TOOSC ĐỘ(QUÀ TẶNG 1.000.000Đ)</div>
+                            <div class="feedback">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="price">10.500.000₫</div>
+                        </a>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img1.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="name-product">GIÁ TREO XE DỌC</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">120.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img2.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="name-product">GIÁ TREO XE NGANG</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">140.000₫</div>
+
+                    </div>
+
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img4.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP ROAD 700C - GIANT OCR 5300 - 2019 (QUÀ TẶNG 1.150.000)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">15.650.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img5.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP ROAD 700C - GIANT OCR CLASSIC - 2020 (QUÀ TẶNG 1.450.000)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">17.250.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img6.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP ROAD 700C - GIANT SCR 2 - 2022 - (QUÀ TẶNG 1.400.000Đ)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">16.900.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img7.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP ROAD 700C - GIANT SPEEDER D1 2021 - (QUÀ TẶNG 700.000Đ)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">14.200.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img8.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP ROAD 700C - GIANT SPEEDER D2 2021 - (QUÀ TẶNG 700.000Đ)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">12.150.000₫</div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div id="bike-mtb" class="container-products"> -->
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img11.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="name-product">ĐỘNG CƠ 60cc - 2KỲ</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">2.600.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img12.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="name-product">GIÁ TREO XE DỌC</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">120.000₫</div>
+
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img13.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">GIÁ TREO XE NGANG</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">140.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img14.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP DIRT JUMP 26" - BOARSE - 12 TỐC ĐỘ</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">15.000.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img15.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP MTB 26" - GIANT ATX 610 - 2021 (QUÀ TẶNG TỪ 700.000 ĐẾN 1.450.000)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">7.500.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img16.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP MTB 26" - GIANT ATX 720 - 2022 (QUÀ TẶNG TỪ 700.000 ĐẾN 1.450.000)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">11.400.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img17.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP MTB 27.5" - GIANT ATX 830 - 2020 (QUÀ TẶNG TỪ 700.000 ĐẾN 1.450.000)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">14.000.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img18.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP MTB 27.5" - GIANT ATX 860 - 2020 (QUÀ TẶNG TỪ 700.000 ĐẾN 1.450.000)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">14.550.000₫</div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div id="bike-fixedgear" class="container-products"> -->
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img21.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="name-product">XE ĐẠP FIXED GEAR</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">4.100.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img22.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="name-product">XE ĐẠP FIXED GEAR</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">4.100.000₫</div>
+
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img23.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP FIXED GEAR</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">4.100.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img24.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP FIXED GEAR - S5</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">2.000.000₫ <span class="old-price">3.900.000</span></div>
+                    </div>
+
+                    <!-- </div> -->
+                    <!-- <div id="bike-child" class="container-products"> -->
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img31.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="name-product">XE ĐẠP TRẺ EM - HELLO KITTY XO100 - 16"</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">2.200.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img32.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="name-product">XE ĐẠP TRẺ EM - KEYSTO 24" - 21 TỐC ĐỘ - THẮNG DĨA (ĐEN/ĐỎ)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">3.500.000₫</div>
+
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img33.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP TRẺ EM - KEYSTO 24" - 21 TỐC ĐỘ - THẮNG DĨA (ĐEN/TRẮNG)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">3.500.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img34.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP TRẺ EM - KEYSTO 24" - 21 TỐC ĐỘ - THẮNG DĨA (ĐEN/XANH LÁ)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">3.500.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img35.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP TRẺ EM - KEYSTO 24" - 21 TỐC ĐỘ - THẮNG DĨA (XÁM)</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">3.500.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img36.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE ĐẠP TRẺ EM - STITCH FAMILY / GWIN 1503 - 16"</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">1.750.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img37.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE THĂNG BẰNG - BALANCE 8 - 12'' - NHÔM</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">1.650.000₫</div>
+                    </div>
+                    <div class="products">
+                        <div class="container-img-product">
+                            <span class="search-btn"><i class="search-btn-item fa-solid fa-magnifying-glass-plus"></i></span>
+                            <img src="imgs/Xe đạp/img38.png" alt="" class="item-product">
+                            <div class="intro-product-item-hover">
+                                <a href=""><i class="hover-product fa-solid fa-scale-balanced"></i></a>
+                                <a href=""><i class="hover-product fa-solid fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="name-product">XE THĂNG BẰNG - BAONEO 8 - 12'' - NHÔM</div>
+                        <div class="feedback">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <div class="price">1.450.000₫</div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container-contacts grid">
+            <div class="list-contact">
+                <h4 class="title-contact">CÔNG TY TNHH TM XE ĐẠP VĂN DÂN</h4>
+                <table class="info-company">
+                    <tr>
+                        <td>Địa chỉ</td>
+                        <td>Đội 2 - Đình Dù - Văn Lâm - Hưng Yên</td>
+                    </tr>
+                    <tr>
+                        <td>Điện thoại</td>
+                        <td>0343628648</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>vandan250702@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="list-contact">
+                <h4 class="title-contact">THÔNG TIN</h4>
+                <ul class="list-info">
+                    <li class="item-info">BẢO MẬT THÔNG TIN</li>
+                    <li class="item-info">QUY ĐỊNH CHUNG</li>
+                </ul>
+            </div>
+            <div class="list-contact">
+                <h4 class="title-contact">GIỚI THIỆU</h4>
+                <ul class="list-info">
+                    <li class="item-info">GIỚI THIỆU</li>
+                    <li class="item-info">LIÊN HỆ</li>
+                </ul>
+            </div>
+            <div class="list-contact">
+                <h4 class="title-contact">DỊCH VỤ</h4>
+                <ul class="list-info">
+                    <li class="item-info">DV BÁN HÀNG</li>
+                    <li class="item-info">DV GIAO HÀNG</li>
+                </ul>
+            </div>
+            <div class="list-contact">
+                <div class="title-contact">LIÊN KẾT VỚI CHÚNG TÔI</div>
+                <div class="list-social">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-pinterest-square"></i>
+                    <i class="fa-brands fa-twitter-square"></i>
+                    <i class="fa-brands fa-google-plus-square"></i>
+                </div>
+                <img src="imgs/contact1.png" alt="" class="img-contact">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="content-footer">
+            Copyright © 2022 Xe đạp Trực Tuyến
+        </div>
+    </div>
+    <script rel="stylesheet" href="js/Danh mục sản phẩm.js"></script>
+
+</body>
+
+</html>

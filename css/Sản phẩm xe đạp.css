@@ -1,0 +1,278 @@
+.navbar-vertical .category-list {
+    display: none;
+}
+
+.navbar-vertical:hover .category-list {
+    display: initial;
+}
+
+.category-list li .active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.category-item-link:hover.active {
+    margin-bottom: 6px;
+}
+
+
+/* đường dẫn */
+
+.bath {
+    margin: 12px 12px 24px;
+}
+
+.bath1 a,
+.bath2 a {
+    color: #000000ed;
+    transition: 0.4s;
+}
+
+.bath1:hover a,
+.bath2:hover a {
+    color: var(--primary-color);
+}
+
+.gach-xuoc {
+    color: #cdcdcd;
+    padding: 0 4px;
+}
+
+.this-index {
+    color: #737373;
+}
+
+
+/* content-product */
+
+.box-img-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* main img */
+
+.container-img {
+    width: 66%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.img-feature {
+    width: 100%;
+    border: 1px solid var(--border-color);
+}
+
+.img-feature img {
+    width: 100%;
+    padding: 16px;
+}
+
+.list-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.list-image .container-extra-img {
+    border: 1px solid var(--border-color);
+    margin: 1.5%;
+    width: 80%;
+}
+
+.list-image img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.list-image .control {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.list-image .control:hover {
+    background-color: #e43030
+}
+
+.list-image .prev {
+    left: 0;
+}
+
+.list-image .next {
+    right: 0;
+}
+
+
+/* info product */
+
+.info-product {
+    width: 33%;
+    font-size: 0.9rem;
+}
+
+.name-product {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.price {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.tinh-trang {
+    padding: 4px 0 10px;
+}
+
+.policy {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+
+.list-color-product {
+    display: flex;
+}
+
+.item-color-product {
+    width: 52px;
+    height: 35px;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.item-color-product.active-color {
+    border: 2px solid var(--primary-color);
+}
+
+.quantity-number {
+    width: 60px;
+    padding: 6px 4px;
+    padding-left: 16px;
+    margin-left: 4px;
+}
+
+.add-cart {
+    width: 150px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-top: 12px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.add-cart:hover {
+    background-color: #e43030
+}
+
+.add-cart i {
+    padding-right: 14px;
+}
+
+.header-detail {}
+
+.list-detail {
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+.list-detail li {
+    padding: 0 26px;
+    height: 50px;
+    margin-right: 12px;
+    background-color: #d1d1d1;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.list-detail li:hover {
+    background-color: #fafafa;
+}
+
+.content-detail {
+    border: 1px solid var(--border-color);
+    padding: 20px 26px;
+    line-height: 2rem;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.content-parameter,
+.content-comment {
+    display: none;
+}
+
+.list-detail .active-details {
+    background-color: #fafafa;
+}
+
+.header-comment {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.box-arange {
+    background-color: #d4d4d4;
+    padding: 4px 2px;
+    margin-left: 4px;
+}
+
+.input-cmt {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.img-user {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    margin-right: 12px;
+}
+
+.img-user img {
+    width: 100%;
+}
+
+.input-comment {
+    flex: 1;
+    height: 50px;
+    padding: 12px;
+}
+
+.link-plugin {
+    font-size: 0.8rem;
+    margin: 6px 12px;
+    color: blue;
+}

@@ -1,0 +1,20 @@
+.navbar-vertical .category-list {
+    display: none;
+}
+
+.navbar-vertical:hover .category-list {
+    display: initial;
+}
+
+.box-container {
+    padding-left: 300px;
+    padding-bottom: 50px;
+    font-size: 0.9rem;
+}
+
+.tittle-service {
+    margin: 30px 0 15px;
+    width: 240px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid saddlebrown;
+}
